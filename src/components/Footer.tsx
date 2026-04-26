@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex flex-col gap-5 text-sm text-white/52 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-medium text-white/82">Abhijeet Kashide</p>
-          <p className="mt-1">Built with React and Framer Motion</p>
+          <p className="mt-1">All rights reserved © {new Date().getFullYear()}</p>
         </div>
         <div className="flex items-center gap-5">
           <a href="https://github.com/abhiinyou" className="transition hover:text-white">
