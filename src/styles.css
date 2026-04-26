@@ -1,0 +1,224 @@
+/* ── Grain overlay ── */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25) 0, transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.16) 0, transparent 20%),
+    radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.18) 0, transparent 22%);
+  mix-blend-mode: screen;
+}
+
+/* ── Mesh / background orbs ── */
+.mesh {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  filter: blur(0.2px);
+  animation: drift 9s ease-in-out infinite;
+}
+
+.orb.one {
+  width: 18rem;
+  height: 18rem;
+  top: 10%;
+  right: 8%;
+}
+
+.orb.two {
+  width: 26rem;
+  height: 26rem;
+  left: -8rem;
+  top: 30%;
+  animation-delay: -2s;
+}
+
+.orb.three {
+  width: 14rem;
+  height: 14rem;
+  bottom: 8%;
+  right: 18%;
+  animation-delay: -4s;
+}
+
+@keyframes drift {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0, -20px, 0) scale(1.03);
+  }
+}
+
+/* ── Grid background ── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 85%);
+  opacity: 0.18;
+}
+
+/* ── Hero tilt card ── */
+.hero-card {
+  transform-style: preserve-3d;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 20px 80px rgba(255, 255, 255, 0.08);
+}
+
+.hero-card:hover {
+  border-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 28px 100px rgba(255, 255, 255, 0.12);
+}
+
+.depth-1 {
+  transform: translateZ(28px);
+}
+
+.depth-2 {
+  transform: translateZ(54px);
+}
+
+.depth-3 {
+  transform: translateZ(84px);
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.18), transparent 32%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* ── Stroke text ── */
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.75);
+}
+
+/* ── Project cards ── */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease, box-shadow 220ms ease;
+  box-shadow: 0 18px 50px rgba(255, 255, 255, 0.04);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 32%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  opacity: 0.45;
+  transform: translate3d(0, 0, 0);
+  transition: transform 260ms ease, opacity 260ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 30px 70px rgba(255, 255, 255, 0.08);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover::after {
+  transform: translate3d(-12px, -12px, 0) scale(1.04);
+  opacity: 0.8;
+}
+
+.project-tag {
+  transition: border-color 220ms ease, background 220ms ease, transform 220ms ease;
+}
+
+.project-card:hover .project-tag {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.project-line {
+  transform-origin: left center;
+  transition: transform 240ms ease, opacity 240ms ease;
+  opacity: 0.55;
+}
+
+.project-card:hover .project-line {
+  transform: scaleX(1.12);
+  opacity: 1;
+}
+
+/* ── Misc interactive cards ── */
+.metric-card,
+.skill-card,
+.contact-card,
+.logo-tile,
+.explore-card {
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.metric-card:hover,
+.skill-card:hover,
+.contact-card:hover,
+.logo-tile:hover,
+.explore-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Timeline ── */
+.timeline-line {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.08));
+}
+
+/* ── Active nav link ── */
+.nav-link-active {
+  color: #fff;
+}
+
+/* ── Disable hover transforms on mobile ── */
+@media (max-width: 768px) {
+
+  .project-card:hover,
+  .metric-card:hover,
+  .skill-card:hover,
+  .contact-card:hover,
+  .logo-tile:hover,
+  .explore-card:hover {
+    transform: none;
+  }
+}
