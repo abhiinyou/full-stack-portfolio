@@ -1,4 +1,5 @@
 import { ArrowRight, Download } from "./icons";
+import resumePDF from "../assets/Abhijeet_Kashide_CV.pdf";
 
 export default function ContactSection() {
   const infoCards = [
@@ -32,7 +33,7 @@ export default function ContactSection() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="/Abhijeet_Kashide_CV.pdf"
+              href={resumePDF}
               download="Abhijeet_Kashide_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"

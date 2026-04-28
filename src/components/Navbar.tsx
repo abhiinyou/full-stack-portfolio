@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Download, MenuIcon, XIcon } from "./icons";
 import type { NavItem } from "../types";
+import resumePDF from "../assets/Abhijeet_Kashide_CV.pdf";
 
 interface NavbarProps {
   navItems: NavItem[];
@@ -29,7 +30,7 @@ export default function Navbar({ navItems, activeSection }: NavbarProps) {
             </a>
           ))}
           <a
-            href="/Abhijeet_Kashide_CV.pdf"
+            href={resumePDF}
             download="Abhijeet_Kashide_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +62,7 @@ export default function Navbar({ navItems, activeSection }: NavbarProps) {
               </a>
             ))}
             <a
-              href="/Abhijeet_Kashide_CV.pdf"
+              href={resumePDF}
               download="Abhijeet_Kashide_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
