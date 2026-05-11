@@ -1,11 +1,11 @@
 import { ArrowRight, Download } from "./icons";
-import resumePDF from "../assets/Abhijeet_Kashide_CV.pdf";
+import resumePDF from "../assets/Abhijeet_Kashide_React_Native_Developer.pdf";
 
 export default function ContactSection() {
   const infoCards = [
-    { label: "Email", value: "abhiinyou.dev@gmail.com" },
+    { label: "Email", value: "abhijeetkashide.dev@gmail.com" },
     { label: "Phone", value: "+91 7709207690" },
-    { label: "Location", value: "Maharashtra, India" },
+    { label: "Location", value: "Pune, India" },
     { label: "Status", value: "Open to opportunities" },
   ];
 
@@ -26,7 +26,7 @@ export default function ContactSection() {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="mailto:abhiinyou.dev@gmail.com"
+              href="mailto:abhijeetkashide.dev@gmail.com"
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:scale-[1.02]"
             >
               Start a conversation
@@ -34,7 +34,7 @@ export default function ContactSection() {
             </a>
             <a
               href={resumePDF}
-              download="Abhijeet_Kashide_CV.pdf"
+              download="Abhijeet_Kashide_React_Native_Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"

@@ -25,7 +25,7 @@ export default function HeroSection() {
         className="relative z-10"
       >
         <div className="mb-6 inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/65">
-          Full Stack Engineer · React Native Specialist · System Thinker
+          Full Stack Engineer · React Native Developer · System Thinker
         </div>
 
         <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] tracking-tight sm:text-6xl lg:text-8xl">
@@ -35,7 +35,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mt-7 max-w-xl text-base leading-7 text-white/68 sm:text-lg">
-          Software Engineer with 2+ years of experience building scalable web and mobile applications
+          Software Engineer with 2.5+ years of experience building scalable web and mobile applications
           using React, React Native, and TypeScript with production impact across enterprise platforms
           and apps used by 500k+ users.
         </p>
@@ -49,8 +49,8 @@ export default function HeroSection() {
             <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
           </a>
           {/* <a
-            href="/Abhijeet_Kashide_CV.pdf"
-            download="Abhijeet_Kashide_CV.pdf"
+            href="/Abhijeet_Kashide_React_Native_Developer.pdf"
+            download="Abhijeet_Kashide_React_Native_Developer.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
@@ -59,7 +59,7 @@ export default function HeroSection() {
             <Download className="h-4 w-4" />
           </a> */}
           <a
-            href="mailto:abhiinyou.dev@gmail.com"
+            href="mailto:abhijeetkashide.dev@gmail.com"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
           >
             Contact Me
@@ -68,19 +68,19 @@ export default function HeroSection() {
 
         <div className="mt-8 space-y-2 text-sm text-white/52">
           <p className="inline-flex items-center gap-2">
-            <MapPin className="h-4 w-4" /> Maharashtra, India
+            <MapPin className="h-4 w-4" /> Pune, India
           </p>
-          <p>+91 7709207690 · abhiinyou.dev@gmail.com</p>
+          <p>+91 7709207690 · abhijeetkashide.dev@gmail.com</p>
         </div>
 
         <div className="mt-10 flex items-center gap-5 text-white/60">
           <a href="https://github.com/abhiinyou" className="transition hover:text-white" aria-label="GitHub">
             <Github className="h-5 w-5" />
           </a>
-          <a href="https://www.linkedin.com/in/abhijeet-kashide" className="transition hover:text-white" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/abhijeetkashide/" className="transition hover:text-white" aria-label="LinkedIn">
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:abhiinyou.dev@gmail.com" className="transition hover:text-white" aria-label="Email">
+          <a href="mailto:abhijeetkashide.dev@gmail.com" className="transition hover:text-white" aria-label="Email">
             <Mail className="h-5 w-5" />
           </a>
         </div>

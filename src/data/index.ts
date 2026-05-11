@@ -14,8 +14,8 @@ export const projects: Project[] = [
     subtitle: "iDMS — Multi-tenant SaaS",
     meta: "Bajaj · Ather · Ford",
     year: "Jan 2024 – Present",
-    impact: "40–50% faster development",
-    desc: "Architected multi-tenant service modules (Appointments, Estimates, Job Cards) enabling rapid client onboarding with zero code changes. Built schema-driven dynamic workflows to support diverse business requirements across Bajaj, Ather, and Ford.",
+    impact: "50% faster development",
+    desc: "Architected multi-tenant service modules (Appointments, Estimates, Job Cards) enabling rapid client onboarding with zero code changes. Designed dynamic workflows and schema-driven forms to support diverse business requirements across Bajaj, Ather, and Ford.",
     tags: ["React.js", "TypeScript", "RBAC", "Microservices", "Node.js"],
   },
   {
@@ -33,13 +33,13 @@ export const projects: Project[] = [
     meta: "Internal Product System",
     year: "Schema-driven · RBAC",
     impact: "50% dev velocity increase",
-    desc: "Engineered a JSON-driven npm library with role-based access control powering dynamic interfaces across Sales and Finance modules — increasing development velocity by 40–50% across the product suite.",
+    desc: "Engineered a JSON-driven npm library with role-based access control powering dynamic interfaces across Sales and Finance modules — increasing development velocity by 50% across the product suite.",
     tags: ["npm", "JSON Config", "RBAC", "TypeScript", "Scalable UI"],
   },
 ];
 
 export const stats: StatItem[] = [
-  { value: "2+", label: "Years Experience" },
+  { value: "2.5+", label: "Years Experience" },
   { value: "500k+", label: "App Downloads" },
   { value: "50%", label: "Dev Velocity Gain" },
   { value: "99.9%", label: "Production Uptime" },
@@ -78,5 +78,5 @@ export const skillCategories: SkillCategory[] = [
   { category: "Frameworks & Libs", items: "React.js, React Native, Next.js, Redux Toolkit, TanStack Query, Express.js, Node.js" },
   { category: "Backend & Security", items: "Microservices, REST APIs, WebSockets, PostgreSQL, MongoDB, SSO (OIDC/OAuth 2.0), JWT" },
   { category: "Cloud & DevOps", items: "Azure (DevOps/Hosting), Docker, CI/CD, Firebase, Mixpanel, Git, GitHub" },
-  { category: "AI & Productivity", items: "Cursor, GitHub Copilot, AI Agents, Prompt Engineering, Postman" },
+  { category: "AI & Productivity", items: "Claude Code, Cursor, GitHub Copilot, AI Agents, Prompt Engineering, Postman" },
 ];

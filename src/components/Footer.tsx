@@ -10,10 +10,10 @@ export default function Footer() {
           <a href="https://github.com/abhiinyou" className="transition hover:text-white">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/abhijeet-kashide" className="transition hover:text-white">
+          <a href="https://www.linkedin.com/in/abhijeetkashide/" className="transition hover:text-white">
             LinkedIn
           </a>
-          <a href="mailto:abhiinyou.dev@gmail.com" className="transition hover:text-white">
+          <a href="mailto:abhijeetkashide.dev@gmail.com" className="transition hover:text-white">
             Email
           </a>
         </div>

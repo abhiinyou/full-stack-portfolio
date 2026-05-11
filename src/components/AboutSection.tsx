@@ -11,7 +11,7 @@ export default function AboutSection() {
 
         <div className="space-y-5 text-white/68">
           <p className="text-base leading-7">
-            I’m a Full Stack Software Engineer with ~2+ years of experience specialising in React.js,
+            I’m a Full Stack Software Engineer with ~2.5+ years of experience specialising in React.js,
             React Native, and TypeScript. My core strength lies in building scalable mobile solutions
             and high-performance web apps using SOLID principles and clean architecture.
           </p>
