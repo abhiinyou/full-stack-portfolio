@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Download, MenuIcon, XIcon } from "./icons";
 import type { NavItem } from "../types";
-import resumePDF from "../assets/Abhijeet_Kashide_React_Native_Developer.pdf";
+import resumePDF from "../assets/resume.pdf";
 
 interface NavbarProps {
   navItems: NavItem[];
@@ -31,7 +31,7 @@ export default function Navbar({ navItems, activeSection }: NavbarProps) {
           ))}
           <a
             href={resumePDF}
-            download="Abhijeet_Kashide_React_Native_Developer.pdf"
+            download="Abhijeet_Kashide_Software_Engineer.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-white transition hover:border-white/35 hover:bg-white/5"
@@ -63,7 +63,7 @@ export default function Navbar({ navItems, activeSection }: NavbarProps) {
             ))}
             <a
               href={resumePDF}
-              download="Abhijeet_Kashide_React_Native_Developer.pdf"
+              download="Abhijeet_Kashide_Software_Engineer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"

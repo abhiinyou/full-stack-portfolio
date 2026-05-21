@@ -49,8 +49,8 @@ export default function HeroSection() {
             <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
           </a>
           {/* <a
-            href="/Abhijeet_Kashide_React_Native_Developer.pdf"
-            download="Abhijeet_Kashide_React_Native_Developer.pdf"
+            href="/resume.pdf"
+            download="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
